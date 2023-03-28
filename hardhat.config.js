@@ -44,6 +44,7 @@ module.exports = {
     apiKey: {
       sepolia: ETHERSCAN_API_KEY,
     },
+    customChains: [],
   },
   // gasReporter: {
   //   enabled: REPORT_GAS,

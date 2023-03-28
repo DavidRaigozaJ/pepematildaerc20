@@ -17,6 +17,14 @@ const {developmentChains, INITIAL_SUPPLY} = require("../../helper-hardhat-config
         it("was deployed", async function(){
             assert(pepeMatilda.address)
         })
+
+        it("should have the correct name, symbol, and decimals", async function () {
+            expect(await pepeMatilda.name()).to.equal("PepeMatilda");
+            expect(await pepeMatilda.symbol()).to.equal("PM");
+            expect(await pepeMatilda.decimals()).to.equal(18);
+          })
+
+    
     })
 
 })
